@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luca Omnia</title>
+  <meta name="description" content="Luca Omnia — Foto, Video, Canzoni, Pensieri e Prodotti. Un unico spazio per tutte le mie creazioni.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="#home" class="navbar__logo">Luca Omnia</a>
+    <ul class="navbar__links">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#foto">Foto</a></li>
+      <li><a href="#video">Video</a></li>
+      <li><a href="#canzoni">Canzoni</a></li>
+      <li><a href="#pensieri">Pensieri</a></li>
+      <li><a href="#prodotti">Prodotti</a></li>
+    </ul>
+    <button class="navbar__burger" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <p class="hero__subtitle">Benvenuto nel mio mondo</p>
+    <h1 class="hero__title">Luca Omnia</h1>
+    <p class="hero__description">
+      Un unico spazio per tutto ciò che creo. Fotografie, video, musica, pensieri e progetti — tutto parte da qui.
+    </p>
+    <a href="#foto" class="hero__cta">Esplora</a>
+    <div class="hero__scroll">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- FOTO -->
+  <section class="section" id="foto">
+    <div class="container">
+      <div class="section__header fade-in">
+        <p class="section__label">Galleria</p>
+        <h2 class="section__title">Foto</h2>
+        <p class="section__subtitle">Momenti catturati, attimi che raccontano storie</p>
+      </div>
+      <div class="photo-grid fade-in">
+        <div class="photo-card photo-card--wide">
+          <img class="photo-card__img" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&q=80" alt="Paesaggio montano">
+          <div class="photo-card__overlay">
+            <span class="photo-card__caption">Alba sulle Dolomiti</span>
+          </div>
+        </div>
+        <div class="photo-card">
+          <img class="photo-card__img" src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=500&q=80" alt="Bosco">
+          <div class="photo-card__overlay">
+            <span class="photo-card__caption">Sentiero nel bosco</span>
+          </div>
+        </div>
+        <div class="photo-card">
+          <img class="photo-card__img" src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=500&q=80" alt="Tramonto">
+          <div class="photo-card__overlay">
+            <span class="photo-card__caption">Tramonto d'estate</span>
+          </div>
+        </div>
+        <div class="photo-card">
+          <img class="photo-card__img" src="https://images.unsplash.com/photo-1518173946687-a20e64d0e8eb?w=500&q=80" alt="Dettaglio natura">
+          <div class="photo-card__overlay">
+            <span class="photo-card__caption">Dettagli di natura</span>
+          </div>
+        </div>
+        <div class="photo-card photo-card--wide">
+          <img class="photo-card__img" src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&q=80" alt="Nebbia in valle">
+          <div class="photo-card__overlay">
+            <span class="photo-card__caption">Nebbia in valle</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO -->
+  <section class="section section--alt" id="video">
+    <div class="container">
+      <div class="section__header fade-in">
+        <p class="section__label">Filmati</p>
+        <h2 class="section__title">Video</h2>
+        <p class="section__subtitle">Storie in movimento, emozioni in sequenza</p>
+      </div>
+      <div class="video-grid fade-in">
+        <div class="video-card">
+          <div class="video-card__embed">
+            <!-- Sostituisci con il tuo embed YouTube -->
+            <div class="video-card__placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              <span>Video YouTube</span>
+            </div>
+          </div>
+          <div class="video-card__info">
+            <p class="video-card__title">Viaggio in Islanda</p>
+            <p class="video-card__desc">Un road trip tra ghiacciai, cascate e aurore boreali</p>
+          </div>
+        </div>
+        <div class="video-card">
+          <div class="video-card__embed">
+            <div class="video-card__placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              <span>Video YouTube</span>
+            </div>
+          </div>
+          <div class="video-card__info">
+            <p class="video-card__title">Sessione in Studio</p>
+            <p class="video-card__desc">Behind the scenes della registrazione del nuovo EP</p>
+          </div>
+        </div>
+        <div class="video-card">
+          <div class="video-card__embed">
+            <div class="video-card__placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              <span>Video YouTube</span>
+            </div>
+          </div>
+          <div class="video-card__info">
+            <p class="video-card__title">Timelapse Urbano</p>
+            <p class="video-card__desc">Milano che si sveglia, vista dal tetto di un palazzo</p>
+          </div>
+        </div>
+        <div class="video-card">
+          <div class="video-card__embed">
+            <div class="video-card__placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              <span>Video YouTube</span>
+            </div>
+          </div>
+          <div class="video-card__info">
+            <p class="video-card__title">Live Acustico</p>
+            <p class="video-card__desc">Concerto intimo in un rifugio di montagna</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CANZONI -->
+  <section class="section" id="canzoni">
+    <div class="container">
+      <div class="section__header fade-in">
+        <p class="section__label">Musica</p>
+        <h2 class="section__title">Canzoni</h2>
+        <p class="section__subtitle">Le mie registrazioni, dalla demo al mix finale</p>
+      </div>
+      <div class="songs-list fade-in">
+        <div class="song-card">
+          <div class="song-card__cover">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+          </div>
+          <div class="song-card__info">
+            <p class="song-card__title">Strade di Notte</p>
+            <p class="song-card__artist">Luca Omnia — Acustico</p>
+            <div class="song-card__bar"><div class="song-card__bar-fill" style="width: 65%"></div></div>
+          </div>
+          <span class="song-card__duration">3:42</span>
+        </div>
+        <div class="song-card">
+          <div class="song-card__cover">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+          </div>
+          <div class="song-card__info">
+            <p class="song-card__title">Verde Profondo</p>
+            <p class="song-card__artist">Luca Omnia — Demo 2024</p>
+            <div class="song-card__bar"><div class="song-card__bar-fill" style="width: 40%"></div></div>
+          </div>
+          <span class="song-card__duration">4:15</span>
+        </div>
+        <div class="song-card">
+          <div class="song-card__cover">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+          </div>
+          <div class="song-card__info">
+            <p class="song-card__title">Onde</p>
+            <p class="song-card__artist">Luca Omnia — EP "Riflessi"</p>
+            <div class="song-card__bar"><div class="song-card__bar-fill" style="width: 80%"></div></div>
+          </div>
+          <span class="song-card__duration">5:01</span>
+        </div>
+        <div class="song-card">
+          <div class="song-card__cover">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+          </div>
+          <div class="song-card__info">
+            <p class="song-card__title">Ultimo Treno</p>
+            <p class="song-card__artist">Luca Omnia — Singolo</p>
+            <div class="song-card__bar"><div class="song-card__bar-fill" style="width: 20%"></div></div>
+          </div>
+          <span class="song-card__duration">3:28</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PENSIERI -->
+  <section class="section section--alt" id="pensieri">
+    <div class="container">
+      <div class="section__header fade-in">
+        <p class="section__label">Diario</p>
+        <h2 class="section__title">Pensieri</h2>
+        <p class="section__subtitle">Riflessioni, appunti sparsi e idee che non volevo perdere</p>
+      </div>
+      <div class="thoughts-grid fade-in">
+        <div class="thought-card">
+          <p class="thought-card__date">15 Settembre 2026</p>
+          <p class="thought-card__text">
+            <em>Le cose migliori nascono quando smetti di cercarle.</em> Oggi ho registrato una melodia per sbaglio, lasciando il microfono acceso mentre cucinavo. È la cosa più vera che abbia mai fatto.
+          </p>
+        </div>
+        <div class="thought-card">
+          <p class="thought-card__date">3 Agosto 2026</p>
+          <p class="thought-card__text">
+            Ho camminato per ore senza meta. Mi sono perso in un quartiere che non conoscevo e ho trovato un muro con scritto <em>"non è mai troppo tardi per ricominciare"</em>. A volte la città ti parla.
+          </p>
+        </div>
+        <div class="thought-card">
+          <p class="thought-card__date">21 Giugno 2026</p>
+          <p class="thought-card__text">
+            Solstizio d'estate. Ho guardato il sole tramontare dal tetto e ho pensato che la bellezza non ha bisogno di un pubblico. <em>Basta che qualcuno la noti.</em>
+          </p>
+        </div>
+        <div class="thought-card">
+          <p class="thought-card__date">12 Maggio 2026</p>
+          <p class="thought-card__text">
+            Studio vuoto, chitarra scordata, tazza di caffè freddo. Eppure è in questi momenti che trovo la concentrazione più pura. <em>Il silenzio è il miglior produttore.</em>
+          </p>
+        </div>
+        <div class="thought-card">
+          <p class="thought-card__date">28 Marzo 2026</p>
+          <p class="thought-card__text">
+            Ho riletto una cosa che ho scritto due anni fa. Non mi ci riconosco più, e forse è il segno più bello che sto crescendo. <em>Cambiare è l'unica costante.</em>
+          </p>
+        </div>
+        <div class="thought-card">
+          <p class="thought-card__date">5 Febbraio 2026</p>
+          <p class="thought-card__text">
+            Nevica. Ho passato il pomeriggio a registrare il suono dei fiocchi contro la finestra. Qualcuno dirà che è inutile. Io dico che è <em>esattamente il punto.</em>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODOTTI -->
+  <section class="section" id="prodotti">
+    <div class="container">
+      <div class="section__header fade-in">
+        <p class="section__label">Shop & Progetti</p>
+        <h2 class="section__title">Prodotti</h2>
+        <p class="section__subtitle">Cose che ho creato e che puoi portare con te</p>
+      </div>
+      <div class="products-grid fade-in">
+        <div class="product-card">
+          <div class="product-card__img"></div>
+          <div class="product-card__body">
+            <span class="product-card__tag">Musica</span>
+            <p class="product-card__title">EP "Riflessi"</p>
+            <p class="product-card__desc">5 tracce registrate tra casa e studio. Disponibile su tutte le piattaforme.</p>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-card__img" style="background: linear-gradient(135deg, #2d5a27, #1a3a1a)"></div>
+          <div class="product-card__body">
+            <span class="product-card__tag">Fotografia</span>
+            <p class="product-card__title">Zine "Silenzi"</p>
+            <p class="product-card__desc">32 pagine di fotografie in bianco e nero. Stampata in edizione limitata.</p>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-card__img" style="background: linear-gradient(135deg, #5a9e55, #3d7a3a)"></div>
+          <div class="product-card__body">
+            <span class="product-card__tag">Preset</span>
+            <p class="product-card__title">Pack Lightroom "Bosco"</p>
+            <p class="product-card__desc">6 preset per dare alle tue foto quel tono caldo e naturale che uso nei miei scatti.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p class="footer__logo">Luca Omnia</p>
+    <p class="footer__text">Foto · Video · Musica · Pensieri · Prodotti</p>
+    <div class="footer__socials">
+      <a href="#" aria-label="Instagram">
+        <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+      </a>
+      <a href="#" aria-label="YouTube">
+        <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.546 12 3.546 12 3.546s-7.505 0-9.377.504A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.504 9.376.504 9.376.504s7.505 0 9.377-.504a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+      </a>
+      <a href="#" aria-label="SoundCloud">
+        <svg viewBox="0 0 24 24"><path d="M1.175 12.225c-.051 0-.094.046-.101.1l-.233 2.154.233 2.105c.007.058.05.098.101.098.05 0 .09-.04.099-.098l.255-2.105-.27-2.154c-.009-.057-.049-.1-.1-.1m-.899.828c-.06 0-.091.037-.104.094L0 14.479l.172 1.308c.013.06.045.094.104.094.057 0 .089-.035.104-.094l.21-1.308-.21-1.334c-.016-.057-.047-.09-.104-.09m1.8-1.143c-.063 0-.11.053-.116.114l-.222 2.496.222 2.418c.006.063.053.114.116.114.063 0 .11-.05.116-.114l.253-2.418-.253-2.496c-.006-.063-.053-.114-.116-.114m.899-.169c-.074 0-.131.06-.137.127l-.2 2.664.2 2.584c.006.073.063.127.137.127.075 0 .131-.054.138-.127l.227-2.584-.227-2.664c-.007-.073-.063-.127-.138-.127m.9-.032c-.086 0-.152.067-.156.14l-.178 2.696.178 2.647c.004.08.07.14.156.14.085 0 .15-.06.157-.14l.2-2.647-.2-2.696c-.007-.08-.072-.14-.157-.14m.963-.474c-.098 0-.172.078-.176.163l-.156 3.17.156 3.065c.004.09.078.163.176.163.096 0 .17-.073.176-.163l.178-3.065-.178-3.17c-.006-.09-.08-.163-.176-.163m.958-.39c-.109 0-.194.085-.198.184l-.135 3.56.135 3.437c.004.1.09.184.198.184.108 0 .194-.084.198-.184l.153-3.437-.153-3.56c-.004-.099-.09-.184-.198-.184m1.05-.308c-.12 0-.213.098-.215.207l-.115 3.87.115 3.728c.002.11.095.207.215.207.119 0 .213-.098.216-.207l.13-3.728-.13-3.87c-.003-.11-.097-.207-.216-.207m1.036-.25c-.13 0-.233.105-.235.228l-.094 4.12.094 3.96c.002.123.105.228.235.228.13 0 .234-.105.236-.228l.106-3.96-.106-4.12c-.002-.123-.106-.228-.236-.228m1.142-.156c-.14 0-.253.118-.253.25l-.075 4.275.075 4.098c0 .14.113.25.253.25.14 0 .253-.11.253-.25l.085-4.098-.085-4.275c0-.14-.114-.25-.253-.25m1.792-.447c-.173 0-.312.143-.312.312L11.1 14.48l.055 4.213c0 .172.139.312.312.312.172 0 .312-.14.312-.312l.063-4.213-.063-4.698c0-.172-.14-.312-.312-.312m.86-.094c-.184 0-.332.15-.332.333l-.04 4.792.04 4.26c0 .185.148.333.332.333.185 0 .333-.148.333-.333l.045-4.26-.045-4.792c0-.184-.148-.333-.333-.333m3.68 1.13c-.482 0-.94.098-1.358.273-.282-3.158-2.946-5.625-6.18-5.625-.652 0-1.283.107-1.864.286-.217.067-.275.136-.277.27v11.22c.002.142.114.26.256.274h9.424c1.67 0 3.023-1.358 3.023-3.032S22.35 9.26 20.68 9.26"/></svg>
+      </a>
+    </div>
+    <p class="footer__copy">&copy; 2026 Luca Omnia. Tutti i diritti riservati.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
