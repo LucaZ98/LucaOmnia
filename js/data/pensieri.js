@@ -1,11 +1,11 @@
 const PENSIERI = [
   {
-    data: "15 Settembre 2026",
-    testo: "<em>Le cose migliori nascono quando smetti di cercarle.</em> Oggi ho registrato una melodia per sbaglio, lasciando il microfono acceso mentre cucinavo. È la cosa più vera che abbia mai fatto."
+    data: "25 Settembre 2026",
+    testo: "Cerca te stesso, capisci te stesso. Vivi una vita che sia degna di te. Non vivere la vita di qualcun altro. Crea il tuo percorso e fai ciò che veramente vuoi."
   },
   {
-    data: "3 Agosto 2026",
-    testo: "Ho camminato per ore senza meta. Mi sono perso in un quartiere che non conoscevo e ho trovato un muro con scritto <em>\"non è mai troppo tardi per ricominciare\"</em>. A volte la città ti parla."
+    data: "25 Settembre 2026",
+    testo: "Io questo circo in cui tutto il mondo si trova non lo capisco. Studi per essere assunto in un'azienda in cui si fanno cose di cui non te ne importa niente. Sei stimolato ad impegnarti per avere una promozione per? Sei stato plagiato per avere il successo come stella polare. Lo trovi nel lavoro, perché non hai più tempo da dedicare ad altro. Il lavoro diventa la tua ragione di vita. Sei schiavo di un sistema che ti induce a volere di più per sentirti soddisfatto e per indurti a consumare di più per sentirti felice. La tua felicità deriva da quello che ottieni e che puoi fare al di fuori del lavoro. L'obiettivo di ognuno di noi, invece, dovrebbe essere di trovare la felicità in ogni giorno. La vacanza di per sé è un concetto sbagliato. Perché devi prendere una pausa dalla tua vita per essere felice? <em>Rendi la tua vita felice, da non aver più bisogno di una pausa.</em>"
   },
   {
     data: "21 Giugno 2026",
