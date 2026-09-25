@@ -487,6 +487,7 @@ img {
   box-shadow: 0 2px 12px var(--shadow);
   border-left: 3px solid var(--green-forest);
   transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
 }
 
 .thought-card:hover {
@@ -499,18 +500,115 @@ img {
   text-transform: uppercase;
   letter-spacing: 0.15em;
   color: var(--green-forest);
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
 }
 
-.thought-card__text {
-  font-size: 0.95rem;
-  line-height: 1.7;
+.thought-card__title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
   color: var(--text);
 }
 
-.thought-card__text em {
+.thought-card__text {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--text-light);
+}
+
+.thought-card__readmore {
+  display: inline-block;
+  margin-top: 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--green-forest);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* Pensiero Modal */
+.pensiero-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  justify-content: center;
+  align-items: center;
+}
+
+.pensiero-modal.open {
+  display: flex;
+}
+
+.pensiero-modal__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+}
+
+.pensiero-modal__content {
+  position: relative;
+  background: var(--white);
+  border-radius: 16px;
+  padding: 3rem;
+  max-width: 650px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  border-left: 4px solid var(--green-forest);
+  animation: modalIn 0.3s ease;
+}
+
+@keyframes modalIn {
+  from { opacity: 0; transform: translateY(20px) scale(0.97); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.pensiero-modal__close {
+  position: absolute;
+  top: 1rem;
+  right: 1.2rem;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: var(--text-light);
+  cursor: pointer;
+  line-height: 1;
+  transition: color 0.2s;
+}
+
+.pensiero-modal__close:hover {
+  color: var(--text);
+}
+
+.pensiero-modal__date {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--green-forest);
+  margin-bottom: 0.5rem;
+}
+
+.pensiero-modal__title {
   font-family: 'Playfair Display', Georgia, serif;
-  font-size: 1.05rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--text);
+}
+
+.pensiero-modal__text p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+
+.pensiero-modal__text p:last-child {
+  margin-bottom: 0;
 }
 
 /* Products */

@@ -109,12 +109,66 @@ document.addEventListener('DOMContentLoaded', () => {
   // === RENDER: PENSIERI ===
   const thoughtsGrid = document.querySelector('#pensieri .thoughts-grid');
   if (thoughtsGrid && typeof PENSIERI !== 'undefined') {
-    thoughtsGrid.innerHTML = PENSIERI.map(p => `
-      <div class="thought-card">
+    thoughtsGrid.innerHTML = PENSIERI.map((p, i) => `
+      <div class="thought-card" data-index="${i}">
         <p class="thought-card__date">${p.data}</p>
-        <p class="thought-card__text">${p.testo}</p>
+        <h3 class="thought-card__title">${p.titolo}</h3>
+        <p class="thought-card__text thought-card__text--preview">Caricamento...</p>
+        <span class="thought-card__readmore">Leggi tutto</span>
       </div>
     `).join('');
+
+    PENSIERI.forEach((p, i) => {
+      fetch(p.file)
+        .then(r => r.text())
+        .then(text => {
+          const card = thoughtsGrid.querySelector(`[data-index="${i}"]`);
+          if (!card) return;
+          const preview = card.querySelector('.thought-card__text');
+          const readmore = card.querySelector('.thought-card__readmore');
+          card.dataset.fullText = text;
+
+          const maxLen = 150;
+          if (text.length <= maxLen) {
+            preview.textContent = text;
+            readmore.style.display = 'none';
+          } else {
+            preview.textContent = text.substring(0, maxLen).trim() + '…';
+          }
+
+          card.addEventListener('click', () => openPensiero(p, text));
+        });
+    });
+  }
+
+  // === MODAL PENSIERO ===
+  const modal = document.createElement('div');
+  modal.className = 'pensiero-modal';
+  modal.innerHTML = `
+    <div class="pensiero-modal__backdrop"></div>
+    <div class="pensiero-modal__content">
+      <button class="pensiero-modal__close">&times;</button>
+      <p class="pensiero-modal__date"></p>
+      <h2 class="pensiero-modal__title"></h2>
+      <div class="pensiero-modal__text"></div>
+    </div>
+  `;
+  document.body.appendChild(modal);
+
+  const closeModal = () => {
+    modal.classList.remove('open');
+    document.body.style.overflow = '';
+  };
+  modal.querySelector('.pensiero-modal__backdrop').addEventListener('click', closeModal);
+  modal.querySelector('.pensiero-modal__close').addEventListener('click', closeModal);
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+  function openPensiero(p, text) {
+    modal.querySelector('.pensiero-modal__date').textContent = p.data;
+    modal.querySelector('.pensiero-modal__title').textContent = p.titolo;
+    modal.querySelector('.pensiero-modal__text').innerHTML = text.split('\n').filter(l => l.trim()).map(l => `<p>${l}</p>`).join('');
+    modal.classList.add('open');
+    document.body.style.overflow = 'hidden';
   }
 
   // === RENDER: PRODOTTI ===
